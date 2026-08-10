@@ -100,7 +100,7 @@ export default function Projects() {
       id: 6,
       title: "3D Futuristic Developer Portfolio",
       category: "React",
-      link: "#home",
+      link: "https://rahultejura-portfolio.netlify.app/",
       github: "https://github.com/Rahul202408",
       description:
         "An interactive 3D WebGL developer portfolio built with React 19, Vite, Three.js particle starfield, mouse perspective 3D card tilt, and automated contact system.",
