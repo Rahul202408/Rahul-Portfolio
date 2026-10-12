@@ -24,7 +24,7 @@ export default function Projects() {
       github: "https://github.com/Rahul202408",
       description:
         "A feature-rich React e-commerce web platform showcasing comfortable furniture and dynamic cart management with responsive modern layouts.",
-      tags: ["React.js", "JavaScript", "Netlify", "Tailwind CSS", "Cart State"],
+      tags: ["React.js", "JavaScript", "Netlify", "Modern CSS", "Cart State"],
       features: [
         "Interactive product catalog with category filter",
         "Responsive glassmorphic UI across all screen sizes",
@@ -50,19 +50,19 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Omnifood Healthy Meal Delivery",
-      category: "HTML / CSS",
-      link: "https://omnifood-rahul2026.netlify.app/",
+      title: "English Spelling Quiz App",
+      category: "Flutter",
+      link: "https://play.google.com/store/apps/details?id=com.trtech.spelling_quiz",
       github: "https://github.com/Rahul202408",
       description:
-        "A premium 365-days-per-year healthy food subscription web landing page crafted with clean HTML5 and modern CSS3 design.",
-      tags: ["HTML5", "CSS3", "JavaScript", "Netlify", "UI/UX"],
+        "A published Google Play Store educational word puzzle game designed to enhance English spelling, vocabulary skills, and speed with interactive levels.",
+      tags: ["Flutter", "Dart", "Play Store", "Education", "Android"],
       features: [
-        "Interactive meal plans, pricing tiers, and testimonial grid",
-        "Fully responsive modern layout for desktop, tablet, and mobile",
-        "Hosted live on Netlify with high performance and accessibility",
+        "Published on Google Play Store with interactive quiz gameplay",
+        "Multiple challenging levels with audio feedback and score evaluation",
+        "Offline-first gameplay and seamless user-friendly mobile experience",
       ],
-      badgeColor: "bg-amber-500/20 text-amber-300 border-amber-400/30",
+      badgeColor: "bg-purple-500/20 text-purple-300 border-purple-400/30",
     },
     {
       id: 4,
@@ -104,7 +104,7 @@ export default function Projects() {
       github: "https://github.com/Rahul202408",
       description:
         "An interactive 3D WebGL developer portfolio built with React 19, Vite, Three.js particle starfield, mouse perspective 3D card tilt, and automated contact system.",
-      tags: ["React 19", "Three.js", "Vite", "Tailwind CSS", "3D Tilt"],
+      tags: ["React 19", "Three.js", "Vite", "Modern CSS", "3D Tilt"],
       features: [
         "Interactive 3D Three.js particle starfield & floating geometry",
         "Real-time 3D perspective mouse tilt card animations",
@@ -112,9 +112,25 @@ export default function Projects() {
       ],
       badgeColor: "bg-purple-500/20 text-purple-300 border-purple-400/30",
     },
+    {
+      id: 7,
+      title: "Daily Expense Tracker App",
+      category: "Flutter",
+      link: "https://play.google.com/store/apps/details?id=com.trtech.expense_tracker",
+      github: "https://github.com/Rahul202408",
+      description:
+        "A published Google Play Store personal finance and budget manager app to track daily expenses, income streams, categories, and monthly analytics.",
+      tags: ["Flutter", "Dart", "Play Store", "Local Storage", "Android"],
+      features: [
+        "Published on Google Play Store with real-time expense tracking",
+        "Category-wise spending breakdown and budget insights",
+        "Fast offline-first SQLite/local database architecture",
+      ],
+      badgeColor: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+    },
   ];
 
-  const categories = ["All", "React", "Flutter", "HTML / CSS"];
+  const categories = ["All", "React", "Flutter"];
 
   const filteredProjects =
     activeFilter === "All"

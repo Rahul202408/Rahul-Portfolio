@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
 
           <h2 className="text-xl md:text-2xl font-bold tracking-wider text-cyan-400 uppercase mb-3 flex items-center gap-2">
-            <Sparkles className="w-5 h-5" /> Full Stack & Mobile Engineer
+            <Sparkles className="w-5 h-5" /> Frontend & Mobile App Engineer
           </h2>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.05]">
@@ -139,7 +139,7 @@ export default function Hero() {
                     <Globe className="w-3.5 h-3.5" /> React.js
                   </span>
                   <span className="px-3 py-1 rounded-lg bg-sky-500/15 border border-sky-400/30 text-sky-300 text-xs font-mono flex items-center gap-1">
-                    <Zap className="w-3.5 h-3.5" /> Node / Firebase
+                    <Zap className="w-3.5 h-3.5" /> Firebase / DB
                   </span>
                 </div>
 
@@ -149,7 +149,7 @@ export default function Hero() {
                     <Layers className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-white">Full Stack Architecture</h4>
+                    <h4 className="text-sm font-bold text-white">Modern App Architecture</h4>
                     <p className="text-xs text-gray-400 mt-0.5">
                       Clean Code • Scalable State • Modern UI
                     </p>

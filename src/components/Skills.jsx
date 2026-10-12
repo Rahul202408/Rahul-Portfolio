@@ -26,14 +26,7 @@ export default function Skills() {
       category: "Frontend",
       level: 90,
       color: "from-sky-400 to-cyan-500",
-      desc: "Hooks, Context API, Tailwind CSS, Component Architecture",
-    },
-    {
-      name: "Java",
-      category: "Backend",
-      level: 85,
-      color: "from-orange-400 to-red-500",
-      desc: "Object-Oriented Programming, Data Structures, Core Java Syntax",
+      desc: "Hooks, Context API, Modern CSS, Component Architecture",
     },
     {
       name: "React Native",
@@ -57,25 +50,11 @@ export default function Skills() {
       desc: "Firestore, Authentication, Cloud Functions, Realtime DB",
     },
     {
-      name: "Node.js & Express",
-      category: "Backend",
-      level: 80,
-      color: "from-emerald-400 to-green-500",
-      desc: "REST APIs, Express middleware, Server logic",
-    },
-    {
       name: "MongoDB",
       category: "Backend",
       level: 82,
       color: "from-green-400 to-emerald-600",
       desc: "NoSQL Schemas, Aggregations, Mongoose",
-    },
-    {
-      name: "Tailwind CSS",
-      category: "Frontend",
-      level: 94,
-      color: "from-cyan-300 to-sky-500",
-      desc: "Custom tokens, responsive design, animations & flex/grid",
     },
     {
       name: "UI/UX & Figma",

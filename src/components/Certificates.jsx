@@ -7,15 +7,15 @@ export default function Certificates() {
 
   const internshipDoc = {
     id: "intern-1",
-    title: "React JS Development Internship",
+    title: "React JS Development Internship (6 Months)",
     company: "Applified (Simplified Web & Mobile Apps)",
     founder: "Kedar Dave (Founder)",
-    period: "01-04-2026 to 31-10-2026",
+    period: "01-04-2026 to 31-10-2026 (6 Months Completed)",
     enrollment: "22010101496 (Darshan University)",
-    badge: "Official Internship Joining Letter",
+    badge: "6 Months Completed Internship",
     link: "https://drive.google.com/file/d/1YR7pWXZHSmZRf5RcdJf_lhSffKGvmAlM/view?usp=sharing",
     description:
-      "Official Internship Joining Letter issued by Applified for React JS Development. Key focus areas include Web Development, UI/UX Design, Performance Optimization, and Feedback iteration under expert guidance.",
+      "Successfully completed a 6-month hands-on React JS development internship at Applified. Key focus areas included Web Development, responsive UI components, Performance Optimization, and code quality under expert mentorship.",
   };
 
   const certificates = [
