@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TiltCard from "./TiltCard";
 import {
   ArrowRight,
@@ -11,6 +11,38 @@ import {
   Layers,
   Terminal,
 } from "lucide-react";
+
+function Counter({ target, duration = 1600, suffix = "" }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTimestamp = null;
+    let animationFrameId;
+
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(easeOut * target));
+
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(step);
+      } else {
+        setCount(target);
+      }
+    };
+
+    animationFrameId = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [target, duration]);
+
+  return (
+    <span>
+      {count}
+      {suffix}
+    </span>
+  );
+}
 
 export default function Hero() {
   return (
@@ -74,21 +106,21 @@ export default function Hero() {
           <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-white/10">
             <div className="flex flex-col">
               <span className="text-3xl md:text-4xl font-black text-cyan-400 font-['Space_Grotesk']">
-                10+
+                <Counter target={10} suffix="+" duration={1600} />
               </span>
               <span className="text-sm text-gray-400 font-medium">Completed Projects</span>
             </div>
 
             <div className="flex flex-col">
               <span className="text-3xl md:text-4xl font-black text-purple-400 font-['Space_Grotesk']">
-                100%
+                <Counter target={100} suffix="%" duration={2000} />
               </span>
               <span className="text-sm text-gray-400 font-medium">Responsive & Fast</span>
             </div>
 
             <div className="flex flex-col">
               <span className="text-3xl md:text-4xl font-black text-sky-400 font-['Space_Grotesk']">
-                2+
+                <Counter target={2} suffix="+" duration={1400} />
               </span>
               <span className="text-sm text-gray-400 font-medium">Tech Stack Domains</span>
             </div>
